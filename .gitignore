@@ -1,0 +1,43 @@
+# VSCode
+.vscode/
+
+# Cache
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints
+*.pyc
+.coverage
+
+# Byte-compiled / Optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data
+*.csv
+*.parquet
+*.feather
+*.crc
+*.snappy
+*.zip
+*.gzip
+*.tar
+
+# Binaries
+*.bin
+*.pkl
+*.pickle
+*.joblib
+
+# Dot env
+.env
+
+# Virtual environments
+.venv/
+.venv-*/
+.env/
+.env-*/
+venv/
+venv-*/
+env/
+env-*/
