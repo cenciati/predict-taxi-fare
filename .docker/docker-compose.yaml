@@ -1,0 +1,46 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:latest
+    container_name: nyc-taxis-db
+    ports:
+      - "5432:5432"
+    volumes:
+      - app-db-data:/var/lib/postgresql/data
+    networks:
+      - app-db-network
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    restart: on-failure
+    tty: true
+
+  app:
+    build:
+      context: ../
+      dockerfile: ./.docker/Dockerfile
+      target: ${BUILD_STAGE}
+    container_name: nyc-taxis-app
+    ports:
+      - "8888:8888"
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: ./
+        target: /opt/nyc-taxis
+    networks:
+      - app-db-network
+    depends_on:
+      - db
+    restart: on-failure
+    tty: true
+
+volumes:
+  app-db-data:
+    driver: local
+
+networks:
+  app-db-network:
+    driver: bridge
