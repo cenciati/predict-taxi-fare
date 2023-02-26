@@ -21,7 +21,6 @@ lint: ## Run all linters and formatters
 	${POETRY} ${PYTHON} isort ${SRC_CODE_DIR}
 	${POETRY} ${PYTHON} black ${SRC_CODE_DIR}
 	${POETRY} ${PYTHON} pylint ${SRC_CODE_DIR}
-	${POETRY} ${PYTHON} flake8 ${SRC_CODE_DIR}
 
 .PHONY: test
 test: ## Run all tests
