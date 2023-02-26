@@ -2,8 +2,8 @@ default_stages: [commit]
 repos:
   - repo: local
     hooks:
-      - id: pytest
-        name: test code
+      - id: isort-black-pylint-flake8
+        name: lint code
         language: system
         entry: bash -c "make lint"
         always_run: true
