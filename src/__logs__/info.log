@@ -1,0 +1,9 @@
+INFO 2023-02-26 11:51:24,998 [root:utils.py:set_jupyter_settings:57]
+Jupyter has been successfully configured.
+
+INFO 2023-02-26 11:51:36,725 [root:data_ingestion.py:ingest_data_into_database:26]
+Ingesting 131894 records into the database...
+
+INFO 2023-02-26 11:51:51,173 [root:data_ingestion.py:ingest_data_into_database:69]
+Data ingestion completed.
+
