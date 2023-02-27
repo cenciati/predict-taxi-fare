@@ -1,0 +1,4 @@
+[core]
+    remote = nyc-taxis
+['remote "nyc-taxis"']
+    url = /tmp/dvcstore
