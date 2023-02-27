@@ -1,0 +1,1 @@
+Here goes third-party sources data.
