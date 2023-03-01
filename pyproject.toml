@@ -27,6 +27,7 @@ pytest-cov = "^4.0.0"
 jupyterlab = "^3.6.1"
 pyarrow = "^11.0.0"
 dvc = "^2.45.1"
+boruta = "^0.3"
 
 [build-system]
 requires = ["poetry-core"]
