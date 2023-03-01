@@ -23,12 +23,6 @@ __pycache__/
 *.gzip
 *.tar
 
-# Binaries
-*.bin
-*.pkl
-*.pickle
-*.joblib
-
 # Dot env
 .env
 
