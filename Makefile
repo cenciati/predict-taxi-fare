@@ -16,6 +16,11 @@ venv: ## Set a virtual environment for development
 	poetry shell
 	poetry install
 
+.PHONY: setup_db
+setup_db: ## Set up only the database container
+	docker-compose -f .docker/docker-compose.yaml \
+	--env-file .env up -d --build db
+
 .PHONY: lint
 lint: ## Run all linters and formatters
 	${POETRY} ${PYTHON} isort ${SRC_CODE_DIR}
