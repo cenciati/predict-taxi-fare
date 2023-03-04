@@ -115,4 +115,4 @@ Placeholder
 ---
 
 # **6. 📎 References**
-- Placeholder
+- [Demystifying MLOps and Presenting a Recipe for the Selection of Open-Source Tools](https://www.mdpi.com/2076-3417/11/19/8861)
