@@ -1,4 +1,4 @@
-SHELL := /bin/bash
+SHELL = /bin/bash
 PYTHON := python3 -m
 POETRY := poetry run
 
@@ -14,10 +14,7 @@ help: ## Display commands help screen
 ##@ Development
 .PHONY: setup_db
 setup_db: ## Set up only the database container
-	docker-compose \ 
-	-f .docker/docker-compose.yaml \
-	--env-file .env \
-	up -d --build db
+	docker-compose -f .docker/docker-compose.yaml --env-file .env up -d --build db
 
 .PHONY: setup_dev_environment
 .ONESHELL:
