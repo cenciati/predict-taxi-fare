@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sheep/documents/repos/predict-taxi-tip-amount/notebooks/mlruns/719581363477528207/cae5333269eb4e98be7b6cdd123d47c3/artifacts
+end_time: 1678049769448
+entry_point_name: ''
+experiment_id: '719581363477528207'
+lifecycle_stage: active
+run_id: cae5333269eb4e98be7b6cdd123d47c3
+run_name: Bayesian_Search_Fine_Tuning
+run_uuid: cae5333269eb4e98be7b6cdd123d47c3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678049761296
+status: 3
+tags: []
+user_id: sheep
