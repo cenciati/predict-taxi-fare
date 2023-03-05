@@ -1,31 +1,39 @@
-SHELL = /bin/bash
-
+SHELL := /bin/bash
 PYTHON := python3 -m
 POETRY := poetry run
-SRC_CODE_DIR := src/
+
+SOURCE_CODE_DIR := src/
 TESTS_DIR := src/__tests__/
+DOCKER_TAG_DEV_ENV := dev-env-nyc-taxis:latest
+
 
 .PHONY: help
 help: ## Display commands help screen
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m<target>\033[0m\n"} /^[a-zA-Z_0-9-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
 
 ##@ Development
-.PHONY: venv
-.ONESHELL:
-venv: ## Set a virtual environment for development
-	poetry shell
-	poetry install
-
 .PHONY: setup_db
 setup_db: ## Set up only the database container
-	docker-compose -f .docker/docker-compose.yaml \
-	--env-file .env up -d --build db
+	docker-compose \ 
+	-f .docker/docker-compose.yaml \
+	--env-file .env \
+	up -d --build db
+
+.PHONY: setup_dev_environment
+.ONESHELL:
+setup_dev_environment: ## Set up only the dev environment (jupyter, dev dependencies, etc.)
+	docker build -t ${DOCKER_TAG_DEV_ENV} --target development -f .docker/Dockerfile .
+	docker container run \
+	-p 8888:8888 \
+	-p 5000:5000 \
+	--mount type=bind,source="$(pwd)",target=/home/jovyan/ \
+	-d ${DOCKER_TAG_DEV_ENV}
 
 .PHONY: lint
 lint: ## Run all linters and formatters
-	${POETRY} ${PYTHON} isort ${SRC_CODE_DIR}
-	${POETRY} ${PYTHON} black ${SRC_CODE_DIR}
-	${POETRY} ${PYTHON} pylint ${SRC_CODE_DIR}
+	${POETRY} ${PYTHON} isort ${SOURCE_CODE_DIR}
+	${POETRY} ${PYTHON} black ${SOURCE_CODE_DIR}
+	${POETRY} ${PYTHON} pylint ${SOURCE_CODE_DIR}
 
 .PHONY: test
 test: ## Run all tests
