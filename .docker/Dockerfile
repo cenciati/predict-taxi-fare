@@ -43,10 +43,10 @@ RUN curl -sSL https://install.python-poetry.org | POETRY_HOME=/opt/poetry python
 FROM staging as development
 ARG APP_NAME
 ARG APP_PATH
-WORKDIR ${APP_PATH}
+WORKDIR /home/jovyan
 
 # Setup dev environment and run jupyter lab
-COPY . .
+COPY pyproject.toml .
 RUN poetry install --no-root
 ENTRYPOINT ["poetry", "run"]
 CMD ["python", "-m", "jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--no-browser"]
