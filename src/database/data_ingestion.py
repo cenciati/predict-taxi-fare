@@ -13,13 +13,12 @@ from src.logging import logger
 def ingest_data_into_database(
     connection_string: str, data_directory: str, files: List[str]
 ) -> None:
-    """Function responsible for ingesting data into a database given
-        a connection string.
+    """Function responsible for ingesting data into a database given a connection string.
     Args:
         connection_string (str): Information about the data source.
-        data_directory (str): Directory path to the folder data/.
+        data_directory (str): Directory path to the folder `data/`.
         files (list[str]): List of files to be read and imported into the database.
-            This list must only contains one type of data format.
+            This list must only contain one type of data format.
     """
     raw_data_reader = RawDataReader(data_directory=data_directory, files_name=files)
     raw_data: pd.DataFrame = raw_data_reader.read_data()
@@ -44,7 +43,7 @@ def ingest_data_into_database(
 
 
 class RawDataReader:
-    """Responsible for reading raw .parquet or .csv files as pandas dataframe."""
+    """Responsible for reading raw `parquet` or `csv` files as pandas dataframe."""
 
     def __init__(self, data_directory: str, files_name: List[str]) -> None:
         self.data_directory = data_directory
@@ -56,6 +55,13 @@ class RawDataReader:
         if self.files_name[0].endswith(".parquet"):
             return self._read_as_parquet()
         return self._read_as_csv()
+
+    def _validate(self) -> None:
+        """Checks if there is at least one file to be read."""
+        if len(self.files_name) == 0:
+            logger.error("No file specified.")
+            raise ValueError
+        logger.debug("Data has been validated.")
 
     def _read_as_parquet(self) -> pd.DataFrame:
         """Read given parquet"""
@@ -72,10 +78,3 @@ class RawDataReader:
             pd.read_csv(os.path.join(self.data_directory, "raw", "train", file_name))
             for file_name in self.files_name
         )
-
-    def _validate(self) -> None:
-        """Checks if there is at least one file to be read."""
-        if len(self.files_name) == 0:
-            logger.error("No file specified.")
-            raise ValueError
-        logger.debug("Data has been validated.")
