@@ -1,9 +1,153 @@
-INFO 2023-02-26 11:51:24,998 [root:utils.py:set_jupyter_settings:57]
+WARNING 2023-03-05 13:08:30,320 [matplotlib.legend:legend.py:_parse_legend_args:1330]
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+
+INFO 2023-03-05 16:42:16,351 [root:utils.py:set_jupyter_settings:57]
 Jupyter has been successfully configured.
 
-INFO 2023-02-26 11:51:36,725 [root:data_ingestion.py:ingest_data_into_database:26]
+INFO 2023-03-05 16:58:45,506 [root:utils.py:set_jupyter_settings:57]
+Jupyter has been successfully configured.
+
+INFO 2023-03-05 17:04:19,688 [root:data_ingestion.py:ingest_data_into_database:25]
 Ingesting 131894 records into the database...
 
-INFO 2023-02-26 11:51:51,173 [root:data_ingestion.py:ingest_data_into_database:69]
+INFO 2023-03-05 17:06:27,461 [root:data_ingestion.py:ingest_data_into_database:25]
+Ingesting 131894 records into the database...
+
+INFO 2023-03-05 17:07:10,937 [root:data_ingestion.py:ingest_data_into_database:42]
 Data ingestion completed.
+
+INFO 2023-03-05 17:49:35,169 [root:utils.py:set_jupyter_settings:57]
+Jupyter has been successfully configured.
+
+INFO 2023-03-05 17:54:03,332 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.005315 seconds
+
+INFO 2023-03-05 17:54:03,470 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 0 trials
+
+INFO 2023-03-05 17:54:16,234 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001981 seconds
+
+INFO 2023-03-05 17:54:16,251 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 1/1 trials with best loss 0.065620
+
+INFO 2023-03-05 17:54:42,171 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001775 seconds
+
+INFO 2023-03-05 17:54:42,181 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 2/2 trials with best loss 0.065620
+
+INFO 2023-03-05 17:54:47,026 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001160 seconds
+
+INFO 2023-03-05 17:54:47,030 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 3/3 trials with best loss 0.065620
+
+INFO 2023-03-05 17:55:05,087 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001556 seconds
+
+INFO 2023-03-05 17:55:05,091 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 4/4 trials with best loss 0.065620
+
+INFO 2023-03-05 17:55:13,148 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001407 seconds
+
+INFO 2023-03-05 17:55:13,154 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 5/5 trials with best loss 0.065620
+
+INFO 2023-03-05 17:55:22,562 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001243 seconds
+
+INFO 2023-03-05 17:55:22,567 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 6/6 trials with best loss 0.065620
+
+INFO 2023-03-05 17:55:28,361 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001722 seconds
+
+INFO 2023-03-05 17:55:28,365 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 7/7 trials with best loss 0.065620
+
+INFO 2023-03-05 17:56:01,279 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001318 seconds
+
+INFO 2023-03-05 17:56:01,284 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 8/8 trials with best loss 0.065620
+
+INFO 2023-03-05 17:56:09,451 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001218 seconds
+
+INFO 2023-03-05 17:56:09,456 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 9/9 trials with best loss 0.065620
+
+INFO 2023-03-05 17:56:59,063 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.002915 seconds
+
+INFO 2023-03-05 17:56:59,069 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 10/10 trials with best loss 0.065620
+
+INFO 2023-03-05 17:57:04,811 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001068 seconds
+
+INFO 2023-03-05 17:57:04,815 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 11/11 trials with best loss 0.065620
+
+INFO 2023-03-05 17:57:13,058 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001103 seconds
+
+INFO 2023-03-05 17:57:13,065 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 12/12 trials with best loss 0.065620
+
+INFO 2023-03-05 17:57:16,580 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001105 seconds
+
+INFO 2023-03-05 17:57:16,585 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 13/13 trials with best loss 0.065620
+
+INFO 2023-03-05 17:57:30,980 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.002025 seconds
+
+INFO 2023-03-05 17:57:30,999 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 14/14 trials with best loss 0.065620
+
+INFO 2023-03-05 17:58:13,304 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001709 seconds
+
+INFO 2023-03-05 17:58:13,314 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 15/15 trials with best loss 0.065620
+
+INFO 2023-03-05 17:58:32,148 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001535 seconds
+
+INFO 2023-03-05 17:58:32,153 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 16/16 trials with best loss 0.064423
+
+INFO 2023-03-05 17:59:08,157 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001402 seconds
+
+INFO 2023-03-05 17:59:08,162 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 17/17 trials with best loss 0.064423
+
+INFO 2023-03-05 17:59:23,009 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001380 seconds
+
+INFO 2023-03-05 17:59:23,013 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 18/18 trials with best loss 0.064423
+
+INFO 2023-03-05 17:59:42,494 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001295 seconds
+
+INFO 2023-03-05 17:59:42,498 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 19/19 trials with best loss 0.064423
+
+INFO 2023-03-05 18:03:05,730 [root:1502823609.py:register_new_model_version:24]
+Model lgbm-reg-tuned has just been registred to runs:/176f11faa6874f2c9485ff798c9efdcf/models at 2023-03-05 18:03:05
+
+INFO 2023-03-05 18:03:22,331 [root:665240840.py:__clean_data:18]
+Data cleansing completed.
+
+INFO 2023-03-05 18:03:22,397 [root:665240840.py:__create_features:25]
+Feature engineering completed.
+
+INFO 2023-03-05 18:03:23,134 [root:665240840.py:__preprocess_data:44]
+Data preprocessing completed.
 
