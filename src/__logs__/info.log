@@ -151,3 +151,874 @@ Feature engineering completed.
 INFO 2023-03-05 18:03:23,134 [root:665240840.py:__preprocess_data:44]
 Data preprocessing completed.
 
+INFO 2023-03-05 18:12:32,947 [root:utils.py:set_jupyter_settings:57]
+Jupyter has been successfully configured.
+
+INFO 2023-03-05 18:13:31,430 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.004307 seconds
+
+INFO 2023-03-05 18:13:31,568 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 0 trials
+
+INFO 2023-03-05 18:13:45,860 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.002315 seconds
+
+INFO 2023-03-05 18:13:45,880 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 1/1 trials with best loss 0.068022
+
+INFO 2023-03-05 18:14:08,907 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001505 seconds
+
+INFO 2023-03-05 18:14:08,912 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 2/2 trials with best loss 0.068022
+
+INFO 2023-03-05 18:14:18,945 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001219 seconds
+
+INFO 2023-03-05 18:14:18,950 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 3/3 trials with best loss 0.068022
+
+INFO 2023-03-05 18:14:23,837 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001167 seconds
+
+INFO 2023-03-05 18:14:23,841 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 4/4 trials with best loss 0.068022
+
+INFO 2023-03-05 18:14:46,740 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001820 seconds
+
+INFO 2023-03-05 18:14:46,746 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 5/5 trials with best loss 0.068022
+
+INFO 2023-03-05 18:15:12,692 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001965 seconds
+
+INFO 2023-03-05 18:15:12,698 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 6/6 trials with best loss 0.068022
+
+INFO 2023-03-05 18:15:18,455 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001233 seconds
+
+INFO 2023-03-05 18:15:18,460 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 7/7 trials with best loss 0.068022
+
+INFO 2023-03-05 18:15:28,930 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001319 seconds
+
+INFO 2023-03-05 18:15:28,933 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 8/8 trials with best loss 0.068022
+
+INFO 2023-03-05 18:15:33,261 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001483 seconds
+
+INFO 2023-03-05 18:15:33,265 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 9/9 trials with best loss 0.068022
+
+INFO 2023-03-05 18:15:37,565 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001910 seconds
+
+INFO 2023-03-05 18:15:37,569 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 10/10 trials with best loss 0.068022
+
+INFO 2023-03-05 18:15:50,606 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.002065 seconds
+
+INFO 2023-03-05 18:15:50,614 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 11/11 trials with best loss 0.068022
+
+INFO 2023-03-05 18:15:58,068 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001261 seconds
+
+INFO 2023-03-05 18:15:58,073 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 12/12 trials with best loss 0.068022
+
+INFO 2023-03-05 18:16:06,211 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001147 seconds
+
+INFO 2023-03-05 18:16:06,216 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 13/13 trials with best loss 0.068022
+
+INFO 2023-03-05 18:16:40,686 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001399 seconds
+
+INFO 2023-03-05 18:16:40,691 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 14/14 trials with best loss 0.068022
+
+INFO 2023-03-05 18:16:45,314 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.003974 seconds
+
+INFO 2023-03-05 18:16:45,323 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 15/15 trials with best loss 0.068022
+
+INFO 2023-03-05 18:16:53,486 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001942 seconds
+
+INFO 2023-03-05 18:16:53,491 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 16/16 trials with best loss 0.068022
+
+INFO 2023-03-05 18:17:05,315 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001380 seconds
+
+INFO 2023-03-05 18:17:05,320 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 17/17 trials with best loss 0.067107
+
+INFO 2023-03-05 18:17:14,671 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001194 seconds
+
+INFO 2023-03-05 18:17:14,675 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 18/18 trials with best loss 0.067107
+
+INFO 2023-03-05 18:17:21,040 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001167 seconds
+
+INFO 2023-03-05 18:17:21,044 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 19/19 trials with best loss 0.067107
+
+INFO 2023-03-05 18:19:51,676 [root:1502823609.py:register_new_model_version:24]
+Model lgbm-reg-tuned has just been registred to runs:/a4b982f1d26444d49dcaa971ce06e8d1/models at 2023-03-05 18:19:51
+
+INFO 2023-03-05 18:19:53,919 [root:665240840.py:__clean_data:18]
+Data cleansing completed.
+
+INFO 2023-03-05 18:19:53,975 [root:665240840.py:__create_features:25]
+Feature engineering completed.
+
+INFO 2023-03-05 18:19:54,177 [root:665240840.py:__preprocess_data:44]
+Data preprocessing completed.
+
+INFO 2023-03-05 18:27:43,143 [root:3400476202.py:__clean_data:19]
+Data cleansing completed.
+
+INFO 2023-03-05 18:27:43,399 [root:3400476202.py:__create_features:41]
+Feature engineering completed.
+
+INFO 2023-03-05 18:27:43,727 [root:3400476202.py:__preprocess_data:60]
+Data preprocessing completed.
+
+INFO 2023-03-05 18:30:04,642 [root:2893556341.py:__clean_data:19]
+Data cleansing completed.
+
+INFO 2023-03-05 18:30:04,656 [root:2893556341.py:__create_features:41]
+Feature engineering completed.
+
+INFO 2023-03-05 18:30:04,735 [root:2893556341.py:__preprocess_data:60]
+Data preprocessing completed.
+
+INFO 2023-03-07 20:35:38,832 [root:utils.py:set_jupyter_settings:57]
+Jupyter has been successfully configured.
+
+INFO 2023-03-07 20:41:13,500 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.012690 seconds
+
+INFO 2023-03-07 20:41:13,704 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 0 trials
+
+INFO 2023-03-07 20:42:09,346 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.003457 seconds
+
+INFO 2023-03-07 20:42:09,374 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 1/1 trials with best loss 0.078618
+
+INFO 2023-03-07 20:42:25,511 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001926 seconds
+
+INFO 2023-03-07 20:42:25,531 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 2/2 trials with best loss 0.078618
+
+INFO 2023-03-07 20:43:39,955 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.006620 seconds
+
+INFO 2023-03-07 20:43:40,080 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 3/3 trials with best loss 0.074983
+
+INFO 2023-03-07 20:46:14,495 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.009513 seconds
+
+INFO 2023-03-07 20:46:14,566 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 4/4 trials with best loss 0.074440
+
+INFO 2023-03-07 20:46:59,269 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.012080 seconds
+
+INFO 2023-03-07 20:46:59,279 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 5/5 trials with best loss 0.066756
+
+INFO 2023-03-07 20:47:10,338 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.003165 seconds
+
+INFO 2023-03-07 20:47:10,344 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 6/6 trials with best loss 0.066756
+
+INFO 2023-03-07 20:50:02,576 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.020152 seconds
+
+INFO 2023-03-07 20:50:02,742 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 7/7 trials with best loss 0.066756
+
+INFO 2023-03-07 20:50:44,737 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.002818 seconds
+
+INFO 2023-03-07 20:50:44,753 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 8/8 trials with best loss 0.066756
+
+INFO 2023-03-07 20:50:55,149 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001950 seconds
+
+INFO 2023-03-07 20:50:55,156 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 9/9 trials with best loss 0.066756
+
+INFO 2023-03-07 20:51:01,916 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001478 seconds
+
+INFO 2023-03-07 20:51:01,920 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 10/10 trials with best loss 0.066756
+
+INFO 2023-03-07 20:51:10,117 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001818 seconds
+
+INFO 2023-03-07 20:51:10,128 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 11/11 trials with best loss 0.066756
+
+INFO 2023-03-07 20:51:22,995 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.002275 seconds
+
+INFO 2023-03-07 20:51:23,001 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 12/12 trials with best loss 0.066756
+
+INFO 2023-03-07 20:51:27,711 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001351 seconds
+
+INFO 2023-03-07 20:51:27,716 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 13/13 trials with best loss 0.066756
+
+INFO 2023-03-07 20:51:33,381 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001346 seconds
+
+INFO 2023-03-07 20:51:33,386 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 14/14 trials with best loss 0.066756
+
+INFO 2023-03-07 20:51:43,487 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001925 seconds
+
+INFO 2023-03-07 20:51:43,495 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 15/15 trials with best loss 0.065620
+
+INFO 2023-03-07 20:51:49,297 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001789 seconds
+
+INFO 2023-03-07 20:51:49,302 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 16/16 trials with best loss 0.065620
+
+INFO 2023-03-07 20:51:53,089 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001319 seconds
+
+INFO 2023-03-07 20:51:53,094 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 17/17 trials with best loss 0.065620
+
+INFO 2023-03-07 20:52:00,194 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001430 seconds
+
+INFO 2023-03-07 20:52:00,199 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 18/18 trials with best loss 0.065620
+
+INFO 2023-03-07 20:52:58,607 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001651 seconds
+
+INFO 2023-03-07 20:52:58,612 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 19/19 trials with best loss 0.065620
+
+INFO 2023-03-07 20:53:05,658 [root:1502823609.py:register_new_model_version:24]
+Model lgbm-reg-tuned has just been registred to runs:/a0069e5549ac4f0aa96c2673f839469e/models at 2023-03-07 20:53:05
+
+INFO 2023-03-07 20:53:07,814 [root:2893556341.py:__clean_data:19]
+Data cleansing completed.
+
+INFO 2023-03-07 20:53:07,889 [root:2893556341.py:__create_features:41]
+Feature engineering completed.
+
+INFO 2023-03-07 20:53:08,196 [root:2893556341.py:__preprocess_data:60]
+Data preprocessing completed.
+
+INFO 2023-03-08 09:04:19,008 [root:utils.py:set_jupyter_settings:57]
+Jupyter has been successfully configured.
+
+INFO 2023-03-08 09:25:02,224 [root:data_ingestion.py:ingest_data_into_database:25]
+Ingesting 131894 records into the database...
+
+INFO 2023-03-08 09:25:21,915 [root:data_ingestion.py:ingest_data_into_database:42]
+Data ingestion completed.
+
+INFO 2023-03-08 09:47:33,593 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:47:33,654 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:47:56,721 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:47:56,758 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:48:40,376 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:48:40,417 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:48:41,126 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:48:41,171 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:49:08,327 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:49:08,361 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:49:08,777 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:49:08,804 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:49:41,746 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:49:41,801 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:49:42,460 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:49:42,495 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:50:01,266 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:50:01,300 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:50:39,117 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:50:39,158 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:50:39,484 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:50:39,528 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:51:09,197 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:51:09,320 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:51:10,035 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:51:10,079 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:52:46,135 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:52:46,189 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:52:46,716 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:52:46,746 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:56:05,951 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:56:05,982 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:56:06,253 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 09:56:06,288 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:01:37,026 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:01:37,062 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:01:37,163 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:01:37,194 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:01:44,130 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:01:44,158 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:01:44,214 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:01:44,242 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:01:56,531 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:01:56,559 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:02:21,810 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:02:21,895 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:03:18,922 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:03:18,961 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:03:19,285 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:03:19,315 [matplotlib.category:category.py:update:223]
+Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+INFO 2023-03-08 10:29:18,546 [root:utils.py:set_jupyter_settings:57]
+Jupyter has been successfully configured.
+
+INFO 2023-03-08 10:47:04,634 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.006779 seconds
+
+INFO 2023-03-08 10:47:04,709 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 0 trials
+
+INFO 2023-03-08 10:47:31,089 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.010347 seconds
+
+INFO 2023-03-08 10:47:31,152 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 1/1 trials with best loss 0.353954
+
+INFO 2023-03-08 10:47:35,295 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001954 seconds
+
+INFO 2023-03-08 10:47:35,299 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 2/2 trials with best loss 0.160134
+
+INFO 2023-03-08 10:47:38,006 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001122 seconds
+
+INFO 2023-03-08 10:47:38,011 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 3/3 trials with best loss 0.160134
+
+INFO 2023-03-08 10:47:40,185 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.002563 seconds
+
+INFO 2023-03-08 10:47:40,192 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 4/4 trials with best loss 0.160134
+
+INFO 2023-03-08 10:47:42,302 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001049 seconds
+
+INFO 2023-03-08 10:47:42,307 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 5/5 trials with best loss 0.160134
+
+INFO 2023-03-08 10:47:44,145 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.002454 seconds
+
+INFO 2023-03-08 10:47:44,150 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 6/6 trials with best loss 0.160134
+
+INFO 2023-03-08 10:47:46,015 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001198 seconds
+
+INFO 2023-03-08 10:47:46,020 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 7/7 trials with best loss 0.160134
+
+INFO 2023-03-08 10:47:47,817 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001722 seconds
+
+INFO 2023-03-08 10:47:47,823 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 8/8 trials with best loss 0.160134
+
+INFO 2023-03-08 10:47:49,635 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001218 seconds
+
+INFO 2023-03-08 10:47:49,640 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 9/9 trials with best loss 0.160134
+
+INFO 2023-03-08 10:47:51,527 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001144 seconds
+
+INFO 2023-03-08 10:47:51,532 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 10/10 trials with best loss 0.160134
+
+INFO 2023-03-08 10:47:53,382 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001176 seconds
+
+INFO 2023-03-08 10:47:53,388 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 11/11 trials with best loss 0.160134
+
+INFO 2023-03-08 10:47:55,496 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.002213 seconds
+
+INFO 2023-03-08 10:47:55,500 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 12/12 trials with best loss 0.160134
+
+INFO 2023-03-08 10:47:57,394 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001316 seconds
+
+INFO 2023-03-08 10:47:57,398 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 13/13 trials with best loss 0.160134
+
+INFO 2023-03-08 10:47:59,483 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001292 seconds
+
+INFO 2023-03-08 10:47:59,487 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 14/14 trials with best loss 0.160134
+
+INFO 2023-03-08 10:48:01,486 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001281 seconds
+
+INFO 2023-03-08 10:48:01,493 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 15/15 trials with best loss 0.024764
+
+INFO 2023-03-08 10:48:03,906 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001351 seconds
+
+INFO 2023-03-08 10:48:03,911 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 16/16 trials with best loss 0.024764
+
+INFO 2023-03-08 10:48:05,888 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001138 seconds
+
+INFO 2023-03-08 10:48:05,892 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 17/17 trials with best loss 0.024764
+
+INFO 2023-03-08 10:48:07,988 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001301 seconds
+
+INFO 2023-03-08 10:48:07,994 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 18/18 trials with best loss 0.024764
+
+INFO 2023-03-08 10:48:10,040 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001480 seconds
+
+INFO 2023-03-08 10:48:10,048 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 19/19 trials with best loss 0.024764
+
+INFO 2023-03-08 12:44:59,987 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.016174 seconds
+
+INFO 2023-03-08 12:45:00,140 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 0 trials
+
+ERROR 2023-03-08 12:45:11,985 [hyperopt.fmin:fmin.py:serial_evaluate:180]
+job exception: INVALID_PARAMETER_VALUE: Invalid metric name: 'MAE std (+/-)'. Names may only contain alphanumerics, underscores (_), dashes (-), periods (.), spaces ( ), and slashes (/).
+
+INFO 2023-03-08 12:53:24,251 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.003094 seconds
+
+INFO 2023-03-08 12:53:24,264 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 0 trials
+
+INFO 2023-03-08 12:53:32,369 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001400 seconds
+
+INFO 2023-03-08 12:53:32,377 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 1/1 trials with best loss 0.353954
+
+INFO 2023-03-08 12:53:35,325 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001617 seconds
+
+INFO 2023-03-08 12:53:35,330 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 2/2 trials with best loss 0.180993
+
+INFO 2023-03-08 12:53:37,913 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.002256 seconds
+
+INFO 2023-03-08 12:53:37,917 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 3/3 trials with best loss 0.180993
+
+INFO 2023-03-08 12:53:40,585 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001993 seconds
+
+INFO 2023-03-08 12:53:40,591 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 4/4 trials with best loss 0.180993
+
+INFO 2023-03-08 12:53:42,941 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001522 seconds
+
+INFO 2023-03-08 12:53:42,945 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 5/5 trials with best loss 0.180993
+
+INFO 2023-03-08 12:53:44,916 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001520 seconds
+
+INFO 2023-03-08 12:53:44,922 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 6/6 trials with best loss 0.180980
+
+INFO 2023-03-08 12:53:46,959 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.002390 seconds
+
+INFO 2023-03-08 12:53:46,964 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 7/7 trials with best loss 0.180980
+
+INFO 2023-03-08 12:53:48,975 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.002250 seconds
+
+INFO 2023-03-08 12:53:48,979 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 8/8 trials with best loss 0.160134
+
+INFO 2023-03-08 12:53:51,368 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.002117 seconds
+
+INFO 2023-03-08 12:53:51,372 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 9/9 trials with best loss 0.160134
+
+INFO 2023-03-08 12:53:53,768 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001317 seconds
+
+INFO 2023-03-08 12:53:53,771 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 10/10 trials with best loss 0.160134
+
+INFO 2023-03-08 12:53:56,029 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001319 seconds
+
+INFO 2023-03-08 12:53:56,033 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 11/11 trials with best loss 0.160134
+
+INFO 2023-03-08 12:53:58,165 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001852 seconds
+
+INFO 2023-03-08 12:53:58,169 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 12/12 trials with best loss 0.160134
+
+INFO 2023-03-08 12:54:00,402 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001310 seconds
+
+INFO 2023-03-08 12:54:00,408 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 13/13 trials with best loss 0.160134
+
+INFO 2023-03-08 12:54:02,667 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001331 seconds
+
+INFO 2023-03-08 12:54:02,673 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 14/14 trials with best loss 0.160134
+
+ERROR 2023-03-08 12:54:02,765 [hyperopt.fmin:fmin.py:serial_evaluate:180]
+job exception: 
+All the 10 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+10 fits failed with the following error:
+Traceback (most recent call last):
+  File "/home/sheep/documents/repos/predict-taxi-tip-amount/.venv/lib/python3.10/site-packages/sklearn/model_selection/_validation.py", line 686, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/sheep/documents/repos/predict-taxi-tip-amount/.venv/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py", line 1134, in fit
+    return super().fit(X, y, sample_weight=sample_weight)
+  File "/home/sheep/documents/repos/predict-taxi-tip-amount/.venv/lib/python3.10/site-packages/sklearn/linear_model/_ridge.py", line 825, in fit
+    raise ValueError(
+ValueError: 'lbfgs' solver can be used only when positive=True. Please use another solver.
+
+
+INFO 2023-03-08 12:56:56,141 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.002230 seconds
+
+INFO 2023-03-08 12:56:56,149 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 0 trials
+
+INFO 2023-03-08 12:57:00,198 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001400 seconds
+
+INFO 2023-03-08 12:57:00,202 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 1/1 trials with best loss 0.159916
+
+INFO 2023-03-08 12:57:02,210 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.003255 seconds
+
+INFO 2023-03-08 12:57:02,214 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 2/2 trials with best loss 0.159916
+
+INFO 2023-03-08 12:57:04,690 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001355 seconds
+
+INFO 2023-03-08 12:57:04,694 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 3/3 trials with best loss 0.159916
+
+INFO 2023-03-08 12:57:06,822 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001715 seconds
+
+INFO 2023-03-08 12:57:06,827 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 4/4 trials with best loss 0.159916
+
+INFO 2023-03-08 12:57:09,390 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001338 seconds
+
+INFO 2023-03-08 12:57:09,394 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 5/5 trials with best loss 0.027570
+
+INFO 2023-03-08 12:57:11,882 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001671 seconds
+
+INFO 2023-03-08 12:57:11,887 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 6/6 trials with best loss 0.027570
+
+INFO 2023-03-08 12:57:13,933 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001390 seconds
+
+INFO 2023-03-08 12:57:13,937 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 7/7 trials with best loss 0.027570
+
+INFO 2023-03-08 12:57:16,151 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001629 seconds
+
+INFO 2023-03-08 12:57:16,156 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 8/8 trials with best loss 0.027570
+
+INFO 2023-03-08 12:57:18,443 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001519 seconds
+
+INFO 2023-03-08 12:57:18,447 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 9/9 trials with best loss 0.027570
+
+INFO 2023-03-08 12:57:20,492 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.002471 seconds
+
+INFO 2023-03-08 12:57:20,498 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 10/10 trials with best loss 0.024764
+
+INFO 2023-03-08 12:57:22,641 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001664 seconds
+
+INFO 2023-03-08 12:57:22,645 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 11/11 trials with best loss 0.024764
+
+INFO 2023-03-08 12:57:25,140 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001345 seconds
+
+INFO 2023-03-08 12:57:25,145 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 12/12 trials with best loss 0.024764
+
+INFO 2023-03-08 12:57:27,504 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001531 seconds
+
+INFO 2023-03-08 12:57:27,509 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 13/13 trials with best loss 0.024764
+
+INFO 2023-03-08 12:57:29,533 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001668 seconds
+
+INFO 2023-03-08 12:57:29,537 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 14/14 trials with best loss 0.024764
+
+INFO 2023-03-08 12:57:31,970 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001440 seconds
+
+INFO 2023-03-08 12:57:31,975 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 15/15 trials with best loss 0.024764
+
+INFO 2023-03-08 12:57:34,397 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001457 seconds
+
+INFO 2023-03-08 12:57:34,400 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 16/16 trials with best loss 0.024764
+
+INFO 2023-03-08 12:57:37,070 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001732 seconds
+
+INFO 2023-03-08 12:57:37,075 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 17/17 trials with best loss 0.024764
+
+INFO 2023-03-08 12:57:39,327 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001934 seconds
+
+INFO 2023-03-08 12:57:39,333 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 18/18 trials with best loss 0.024764
+
+INFO 2023-03-08 12:57:42,385 [hyperopt.tpe:tpe.py:suggest:864]
+build_posterior_wrapper took 0.001780 seconds
+
+INFO 2023-03-08 12:57:42,391 [hyperopt.tpe:tpe.py:suggest:900]
+TPE using 19/19 trials with best loss 0.024764
+
+INFO 2023-03-08 12:59:30,155 [root:1502823609.py:register_new_model_version:24]
+Model ridge-regressor has just been registred to runs:/e0075f300f9d4ad1b491f1f2ae2877f9/models at 2023-03-08 12:59:30
+
+INFO 2023-03-08 12:59:44,178 [root:2893556341.py:__clean_data:19]
+Data cleansing completed.
+
+INFO 2023-03-08 12:59:44,227 [root:2893556341.py:__create_features:41]
+Feature engineering completed.
+
+INFO 2023-03-08 12:59:44,555 [root:2893556341.py:__preprocess_data:60]
+Data preprocessing completed.
+
+INFO 2023-03-10 13:44:26,745 [alembic.runtime.migration:migration.py:__init__:205]
+Context impl SQLiteImpl.
+
+INFO 2023-03-10 13:44:26,753 [alembic.runtime.migration:migration.py:__init__:208]
+Will assume non-transactional DDL.
+
+INFO 2023-03-10 13:44:27,208 [alembic.runtime.migration:migration.py:__init__:205]
+Context impl SQLiteImpl.
+
+INFO 2023-03-10 13:44:27,211 [alembic.runtime.migration:migration.py:__init__:208]
+Will assume non-transactional DDL.
+
+INFO 2023-03-10 13:48:17,132 [alembic.runtime.migration:migration.py:__init__:205]
+Context impl SQLiteImpl.
+
+INFO 2023-03-10 13:48:17,146 [alembic.runtime.migration:migration.py:__init__:208]
+Will assume non-transactional DDL.
+
+INFO 2023-03-10 13:48:17,288 [alembic.runtime.migration:migration.py:__init__:205]
+Context impl SQLiteImpl.
+
+INFO 2023-03-10 13:48:17,291 [alembic.runtime.migration:migration.py:__init__:208]
+Will assume non-transactional DDL.
+
+INFO 2023-03-10 13:48:17,355 [alembic.runtime.migration:migration.py:__init__:205]
+Context impl SQLiteImpl.
+
+INFO 2023-03-10 13:48:17,358 [alembic.runtime.migration:migration.py:__init__:208]
+Will assume non-transactional DDL.
+
+INFO 2023-03-10 13:48:47,161 [alembic.runtime.migration:migration.py:__init__:205]
+Context impl SQLiteImpl.
+
+INFO 2023-03-10 13:48:47,167 [alembic.runtime.migration:migration.py:__init__:208]
+Will assume non-transactional DDL.
+
+INFO 2023-03-10 13:48:47,600 [alembic.runtime.migration:migration.py:__init__:205]
+Context impl SQLiteImpl.
+
+INFO 2023-03-10 13:48:47,602 [alembic.runtime.migration:migration.py:__init__:208]
+Will assume non-transactional DDL.
+
+INFO 2023-03-10 13:48:47,648 [alembic.runtime.migration:migration.py:__init__:205]
+Context impl SQLiteImpl.
+
+INFO 2023-03-10 13:48:47,649 [alembic.runtime.migration:migration.py:__init__:208]
+Will assume non-transactional DDL.
+
+INFO 2023-03-11 11:02:38,069 [root:utils.py:set_jupyter_settings:57]
+Jupyter has been successfully configured.
+
