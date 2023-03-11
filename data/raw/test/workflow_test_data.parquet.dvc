@@ -1,0 +1,4 @@
+outs:
+- md5: b6c43f7cab2a01245f93619d96b80fb1
+  size: 1962747
+  path: workflow_test_data.parquet
