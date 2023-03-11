@@ -41,6 +41,15 @@ lint: ## Run all linters and formatters
 test: ## Run all tests
 	${POETRY} ${PYTHON} pytest ${TESTS_DIR}
 
+test_unit: ## Run only unit tests
+	${POETRY} ${PYTHON} pytest ${TESTS_DIR} -k "unit"
+
+test_integration: ## Run integration tests
+	${POETRY} ${PYTHON} pytest ${TESTS_DIR} -k "integration"
+
+test_e2e: ## Run end-to-end tests
+	${POETRY} ${PYTHON} pytest ${TESTS_DIR} -k "e2e"
+
 .PHONY: run_api_locally
 run_api_locally: ## Start web server
 	${POETRY} ${PYTHON} src.api.server
