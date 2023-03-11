@@ -3,8 +3,8 @@ from typing import List
 import numpy as np
 import pandas as pd
 from inflection import underscore
-from prefect import get_run_logger, task
 
+from prefect import get_run_logger, task
 from src.pipeline.exceptions.nyc_workflow_exception import NYCWorkflowException
 
 

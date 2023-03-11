@@ -1,9 +1,9 @@
 import os
+
 import pandas as pd
+
 from prefect import get_run_logger, task
-
 from src.pipeline.exceptions.nyc_workflow_exception import NYCWorkflowException
-
 
 REPORTS_DIR: str = os.path.join("reports")
 

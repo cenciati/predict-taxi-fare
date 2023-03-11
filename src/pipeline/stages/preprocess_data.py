@@ -3,8 +3,9 @@ from typing import List
 
 import joblib
 import pandas as pd
-from prefect import get_run_logger, task
 
+from prefect import get_run_logger, task
+from src.logging import logger
 from src.pipeline.exceptions.nyc_workflow_exception import NYCWorkflowException
 
 PREPROCESSORS_DIR: str = os.path.join("src", "pipeline", "preprocessors")
@@ -12,7 +13,7 @@ PREPROCESSORS_DIR: str = os.path.join("src", "pipeline", "preprocessors")
 
 @task(retries=2, retry_delay_seconds=20)
 def preprocess_data(cleaned_data_with_features: pd.DataFrame) -> pd.DataFrame:
-    logger = get_run_logger()
+    logger_prefect = get_run_logger()
     try:
         # Apply robust scaler
         for column in ["tip_amount", "extra"]:
@@ -50,6 +51,7 @@ def preprocess_data(cleaned_data_with_features: pd.DataFrame) -> pd.DataFrame:
             "payment_type_2.0",
         ]
     except Exception as exc:
+        logger.critical("Failed while trying to preprocess the data. %s", exc)
         raise NYCWorkflowException from exc
-    logger.info("NYC workflow: data preprocessed.")
+    logger_prefect.info("NYC workflow: data preprocessed.")
     return cleaned_data_with_features.loc[:, selected_columns]

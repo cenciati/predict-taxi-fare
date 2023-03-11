@@ -1,6 +1,6 @@
 import pandas as pd
-from prefect import get_run_logger, task
 
+from prefect import get_run_logger, task
 from src.pipeline.exceptions import NYCWorkflowException
 
 
@@ -17,7 +17,7 @@ def read_data(data_path: str) -> pd.DataFrame:
         logger.error("NYC workflow: %s", message)
         raise NYCWorkflowException(message)
     if len(raw_data) == 0:
-        message: str = "Empty dataset"
+        message: str = "Empty dataset."
         logger.error("NYC workflow: %s", message)
         raise NYCWorkflowException(message)
     logger.info("NYC workflow: data successfully read.")
