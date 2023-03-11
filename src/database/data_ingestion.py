@@ -13,7 +13,8 @@ from src.logging import logger
 def ingest_data_into_database(
     connection_string: str, data_directory: str, files: List[str]
 ) -> None:
-    """Function responsible for ingesting data into a database given a connection string.
+    """Function responsible for ingesting data into a database given a
+    connection string.
     Args:
         connection_string (str): Information about the data source.
         data_directory (str): Directory path to the folder `data/`.
