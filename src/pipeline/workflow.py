@@ -1,25 +1,24 @@
-# pylint: disable=invalid-name
+# pylint: disable=invalid-name, ungrouped-imports
+import os
 from argparse import ArgumentParser, Namespace
 from os import getenv
-import os
 from typing import Optional, Sequence
 
 import numpy as np
 import pandas as pd
-from prefect import flow
 from prefect.deployments import Deployment
 
 import mlflow
+from prefect import flow
 from src.logging import logger
 from src.pipeline.exceptions import NYCWorkflowException
 from src.pipeline.stages import (
-    persist_results,
     clean_data,
     create_features,
+    persist_results,
     preprocess_data,
     read_data,
 )
-
 
 PREFECT_DIR: str = os.path.join("prefect")
 
