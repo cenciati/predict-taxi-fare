@@ -15,7 +15,6 @@ scikit-learn = "^1.2.1"
 seaborn = "^0.12.2"
 inflection = "^0.5.1"
 psycopg2-binary = "^2.9.5"
-lightgbm = "^3.3.5"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.0.4"
@@ -32,6 +31,7 @@ llvmlite = "^0.39.1"
 numba = "^0.56.4"
 mlflow = "^2.2.0"
 xgboost = "^1.7.4"
+lightgbm = "^3.3.5"
 hyperopt = "^0.2.7"
 prefect = "^2.8.5"
 
@@ -61,10 +61,10 @@ addopts = [
     "--cov",
     "--cov-report=term-missing:skip-covered",
     "--cov-report=html:reports/coverage",
-    # "--cov-fail-under=90",
+    "--cov-fail-under=90",
 ]
 filterwarnings = ["error"]
-testpaths = ["tests"]
+testpaths = ["src/__tests__"]
 markers = [
     "unit: unit tests.",
     "integration: integration tests.",
@@ -73,4 +73,4 @@ markers = [
 
 [tool.coverage.run]
 parallel = true
-source = ["tests"]
+source = ["src/__tests__"]
