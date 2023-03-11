@@ -32,25 +32,30 @@ def predict_total_amount_nyc_taxis_flow(
 ) -> None:
     mlflow_setup()
     try:
+        logger.info("Reading data...")
         raw_data: pd.DataFrame = read_data(data_path)
+        logger.info("Preparing data...")
         cleaned_data: pd.DataFrame = clean_data(raw_data)
         cleaned_data_with_features: pd.DataFrame = create_features(cleaned_data)
         preprocessed_data: pd.DataFrame = preprocess_data(cleaned_data_with_features)
         model = mlflow.sklearn.load_model(f"models:/{model_name}/Production")
+        logger.info("Making the predictions...")
         predictions: np.ndarray = model.predict(
             preprocessed_data.drop("id", axis=1).to_numpy()
         )
         preprocessed_data["predictions"] = predictions
+        logger.info("Persisting result data...")
         persist_results(preprocessed_data)
     except NYCWorkflowException as exc:
         logger.critical(
-            "predict_total_amount_nyc_taxis_flow` could not be completed. %s", exc
+            "`predict_total_amount_nyc_taxis_flow` could not be completed. %s", exc
         )
         raise NYCWorkflowException from exc
 
 
 def mlflow_setup() -> None:
     """Sets up the required information to access the models."""
+    logger.info("Setting up MLflow...")
     MLFLOW_TRACKING_URI: str = "http://127.0.0.1:5000"
     EXPERIMENT_NAME: str = "Experiment_02"
     mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
@@ -88,4 +93,6 @@ deployment = Deployment.build_from_flow(
 
 if __name__ == "__main__":
     deployment.apply()
+    # As this deployment isn't scheduled yet,
+    # I'm running it manually
     predict_total_amount_nyc_taxis_flow(args.datapath)
