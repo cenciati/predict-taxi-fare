@@ -26,6 +26,11 @@ setup_dev_environment: ## Set up only the dev environment (jupyter, dev dependen
 	--mount type=bind,source="$(pwd)",target=/home/jovyan/ \
 	-d ${DOCKER_TAG_DEV_ENV}
 
+.PHONY: prefect_deploy_and_run
+.ONESHELL:
+prefect_deploy_and_run_flow: ## Create a prefect flow deployment and run it right away
+	python -m src.pipeline.workflow -d ./data/raw/test/workflow_test_data.parquet
+
 .PHONY: lint
 lint: ## Run all linters and formatters
 	${POETRY} ${PYTHON} isort ${SOURCE_CODE_DIR}

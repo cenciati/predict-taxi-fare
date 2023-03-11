@@ -1,0 +1,56 @@
+###
+### A complete description of a Prefect Deployment for flow 'predict-taxi-tip-total-amount'
+###
+name: nyc-taxis-production
+description: null
+version: 31bcaef4ecdca6ad1b853f5a6483b21c
+# The work queue that will handle this deployment's runs
+work_queue_name: production
+work_pool_name: default-agent-pool
+tags: []
+parameters:
+  data_path: ./data/raw/test/workflow_test_data.parquet
+schedule: null
+is_schedule_active: true
+infra_overrides:
+  env:
+    PREFECT_LOGGING_LEVEL: DEBUG
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: predict-taxi-tip-total-amount
+manifest_path: null
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  _block_document_id: 5557a179-e31b-43cb-9ed5-163ddadba683
+  _block_document_name: anonymous-35022135-6591-409b-aece-d7c4ca7545e4
+  _is_anonymous: true
+  block_type_slug: process
+  _block_type_slug: process
+storage: null
+path: /home/sheep/documents/repos/predict-taxi-tip-amount
+entrypoint: src/pipeline/workflow.py:predict_total_amount_nyc_taxis_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    data_path:
+      title: data_path
+      position: 0
+      type: string
+    model_name:
+      title: model_name
+      default: ridge-regressor
+      position: 1
+      type: string
+  required:
+  - data_path
+  definitions: null
+timestamp: '2023-03-11T02:41:35.780276+00:00'
