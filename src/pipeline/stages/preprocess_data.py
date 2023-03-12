@@ -50,8 +50,11 @@ def preprocess_data(cleaned_data_with_features: pd.DataFrame) -> pd.DataFrame:
             "extra",
             "payment_type_2.0",
         ]
+        logger_prefect.info("NYC workflow: data preprocessed.")
+        if "payment_type_2.0" in cleaned_data_with_features.columns:
+            return cleaned_data_with_features.loc[:, selected_columns]
+        cleaned_data_with_features["payment_type_2.0"] = 0
+        return cleaned_data_with_features.loc[:, selected_columns]
     except Exception as exc:
         logger.critical("Failed while trying to preprocess the data. %s", exc)
         raise NYCWorkflowException from exc
-    logger_prefect.info("NYC workflow: data preprocessed.")
-    return cleaned_data_with_features.loc[:, selected_columns]
