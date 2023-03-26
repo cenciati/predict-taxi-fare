@@ -1,7 +1,14 @@
+from os import getenv
+
+from dotenv import find_dotenv, load_dotenv
 from fastapi import FastAPI
 from uvicorn import run
 
 from src.api.routes import predictions_router, root_router
+
+load_dotenv(find_dotenv())
+API_HOST: str = getenv("API_HOST")
+API_PORT: int = int(getenv("API_PORT"))
 
 API_V1_STR: str = "/api/v1"
 app = FastAPI(
@@ -16,8 +23,8 @@ app.include_router(predictions_router, prefix=API_V1_STR, tags=["predictions"])
 if __name__ == "__main__":
     run(
         app="src.api.server:app",
-        host="0.0.0.0",
-        port=8000,
+        host=API_HOST,
+        port=API_PORT,
         reload=True,
         log_level="debug",
     )
