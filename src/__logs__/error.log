@@ -27,3 +27,6 @@ You can try to debug the error by setting error_score='raise'.
 
 ERROR 2023-03-04 17:20:22,511 [hyperopt.fmin:fmin.py:serial_evaluate:180]
 job exception: log_dict() missing 1 required positional argument: 'artifact_file'
+ERROR 2023-03-11 19:41:06,874 [root:predictions_router.py:make_a_prediction:62]
+Error while trying to make the prediction. name 'predict_total_amount_nyc_taxis_flow' is not defined
+
