@@ -7,6 +7,7 @@ ARG POETRY_VERSION=1.2.2
 FROM python:${PYTHON_VERSION}-slim-bullseye as staging
 ARG APP_NAME
 ARG APP_PATH
+ARG PYTHON_VERSION
 ARG POETRY_VERSION
 
 # Update libraries and install some helper tools
@@ -41,9 +42,9 @@ RUN curl -sSL https://install.python-poetry.org | POETRY_HOME=/opt/poetry python
 
 # Stage: development
 FROM staging as development
-ARG APP_NAME
-ARG APP_PATH
 WORKDIR /home/jovyan
+
+EXPOSE 8888
 
 # Setup dev environment and run jupyter lab
 COPY pyproject.toml .
@@ -58,6 +59,7 @@ ARG APP_PATH
 WORKDIR ${APP_PATH}
 
 # Convert poetry dependencies to a requirements.txt file
+COPY --from=development /home/jovyan/pyproject.toml .
 RUN poetry export \ 
     --without dev \
     --without hashes \
@@ -68,6 +70,7 @@ RUN poetry export \
 FROM python:${PYTHON_VERSION}-slim-bullseye as production
 ARG APP_NAME
 ARG APP_PATH
+WORKDIR ${APP_PATH}
 
 ENV \
     PYTHONDONTWRITEBYTECODE=1 \
@@ -77,20 +80,20 @@ ENV \
     PIP_NO_CACHE_DIR=off \
     PIP_DISABLE_PIP_VERSION_CHECK=on \
     PIP_DEFAULT_TIMEOUT=100
-ENV \
-    PORT=8000
+EXPOSE 8000
 
-# Install only production dependencies and run ASGI web server
-WORKDIR ${APP_PATH}
-COPY \
-    --from=staging /usr/local/bin/dockerize /usr/local/bin && \
-    --from=development ${APP_PATH}/src ./src && \
-    --from=development ${APP_PATH}/.env ./ && \
-    --from=build ${APP_PATH}/requirements.txt ./
+# Download and install only production dependencies
+COPY ./src ./src
+COPY .env .
+
+COPY --from=build ${APP_PATH}/requirements.txt .
 RUN pip install --upgrade pip && \
     pip install -r requirements.txt
 
 COPY ./.docker/entrypoint.sh ./
 RUN chmod +x ./entrypoint.sh
+
+# Wait until the database is ready to run the ASGI web server
+COPY --from=staging /usr/local/bin/dockerize /usr/local/bin
 ENTRYPOINT ["dockerize", "-wait", "tcp://db:5432", "-timeout", "30s"]
-CMD ["python", "-m", "uvicorn", "src.api.server:app", "--host=0.0.0.0", "--port=8000"]
+CMD ["python", "-m", "src.api.server"]
