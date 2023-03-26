@@ -1,57 +1,37 @@
-# pylint: disable=no-name-in-module
-from datetime import datetime
+# pylint: disable=unused-argument, invalid-name
+from http import HTTPStatus
 from typing import Dict
 
-from fastapi import APIRouter, HTTPException, status
-from pydantic import BaseModel
+from fastapi import APIRouter, HTTPException, Request, status
 
+from src.api.schemas import InputMakeNewPrediction, construct_response
 from src.logging import logger
 from src.pipeline.online_workflow import OnlineInferencePipeline
 
 predictions_router = APIRouter()
-
-
-class InputMakeNewPrediction(BaseModel):
-    """Expected data input format."""
-
-    id: str
-    lpep_pickup_datetime: datetime
-    lpep_dropoff_datetime: datetime
-    fare_amount: int | float
-    trip_distance: int | float
-    tip_amount: int | float
-    extra: int | float
-    payment_type: str
-    vendor_id: str | int
-    store_and_fwd_flag: str
-    ratecode_id: str
-    pu_location_id: str
-    do_location_id: str
-    passenger_count: int
-    mta_tax: float
-    tolls_amount: float
-    improvement_surcharge: float
-    trip_type: str
-    congestion_surcharge: float
+PREDICTION_JSON_RESPONSE_FORMAT = Dict[str, str | Dict[str, float]]
+model_name: str = "ridge-regressor"
+model_version: str = "2"
 
 
 @predictions_router.post(
     "/predict/",
     status_code=status.HTTP_200_OK,
-    response_model=Dict[str, Dict[str, float]],
+    response_model=PREDICTION_JSON_RESPONSE_FORMAT,
 )
-def predict_taxi_ride_total_amount(input_: InputMakeNewPrediction):
-    data: dict = input_.dict()
+@construct_response
+def _predict(request: Request, input_: InputMakeNewPrediction):
     try:
-        if len(data) == 0:
-            logger.debug("User sent empty data.")
-            raise HTTPException(
-                status_code=status.HTTP_400_BAD_REQUEST,
-                detail="Can't make a prediction with no data.",
-            )
-        pipeline = OnlineInferencePipeline(data=data)
+        print(input_)
+        pipeline = OnlineInferencePipeline(data=input_.dict(), model_name=model_name)
         prediction: Dict[str, float] = pipeline.execute()
-        return {"data": prediction}
+        return {
+            "message": HTTPStatus.OK.phrase,
+            "status-code": status.HTTP_200_OK,
+            "model-name": model_name,
+            "model-version": model_version,
+            "data": prediction,
+        }
     except Exception as exc:
         logger.error("Error while trying to make the prediction. %s", exc)
         raise HTTPException(
