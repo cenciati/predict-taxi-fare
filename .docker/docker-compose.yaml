@@ -25,11 +25,8 @@ services:
     container_name: nyc-taxis-app
     ports:
       - "8888:8888"
+      - "5000:5000"
       - "8000:8000"
-    volumes:
-      - type: bind
-        source: ./
-        target: /opt/nyc-taxis
     networks:
       - app-db-network
     depends_on:
