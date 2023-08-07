@@ -7,7 +7,7 @@ import pytest
 
 from src.pipeline.stages import clean_data, create_features, read_data
 
-DATA_PATH: str = os.path.join("./data/raw/test/workflow_test_data.parquet")
+DATA_PATH: str = os.path.join('./data/raw/test/workflow_test_data.parquet')
 
 
 @pytest.fixture()
@@ -18,5 +18,7 @@ def create_features_result() -> pd.DataFrame:
 
 
 def test_if_new_features_were_created(create_features_result) -> None:
-    new_features: List[str] = ["tax_per_meter", "trip_duration"]
-    assert all(column in create_features_result.columns for column in new_features)
+    new_features: List[str] = ['tax_per_meter', 'trip_duration']
+    assert all(
+        column in create_features_result.columns for column in new_features
+    )

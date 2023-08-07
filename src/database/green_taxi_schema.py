@@ -3,7 +3,7 @@ from sqlalchemy import BigInteger, Column, DateTime, Float, String
 from sqlalchemy.engine import Engine, create_engine
 from sqlalchemy.ext.declarative import declarative_base
 
-from src.logging import logger
+from src.__logs__.logging import logger
 
 Base = declarative_base()
 
@@ -11,7 +11,7 @@ Base = declarative_base()
 class GreenTaxiSchema(Base):
     """SQLAlchemy green taxi table mapping."""
 
-    __tablename__ = "green_taxi"
+    __tablename__ = 'green_taxi'
     id = Column(BigInteger, primary_key=True, autoincrement=True)
     VendorID = Column(String, nullable=False)
     lpep_pickup_datetime = Column(DateTime, nullable=False)
@@ -37,7 +37,7 @@ class GreenTaxiSchema(Base):
     @classmethod
     def create_table(cls, connection_string: str) -> Engine:
         logger.debug(
-            "Creating table %s using the following connection string %s.",
+            'Creating table %s using the following connection string %s.',
             cls.__tablename__,
             connection_string,
         )

@@ -7,7 +7,9 @@ class NYCWorkflowException(Exception):
 
     def __init__(
         self,
-        message: Optional[str] = "New York City taxi workflow could not be completed.",
+        message: Optional[
+            str
+        ] = 'New York City taxi workflow could not be completed.',
     ) -> None:
         self.message = message
 

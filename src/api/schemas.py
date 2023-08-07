@@ -30,34 +30,34 @@ class InputMakeNewPrediction(BaseModel, frozen=True):
     trip_type: str = Field(..., max_length=3)
     congestion_surcharge: float
 
-    @validator("vendor_id", always=True, allow_reuse=True)
+    @validator('vendor_id', always=True, allow_reuse=True)
     def ensure_vendor_id_consistency(cls, value: str) -> str:
-        if value not in ["1", "2"]:
-            raise ValidationError("Vendor ID must be 1 or 2.")  # type: ignore
+        if value not in ['1', '2']:
+            raise ValidationError('Vendor ID must be 1 or 2.')  # type: ignore
         return value
 
-    @validator("ratecode_id", always=True, allow_reuse=True)
+    @validator('ratecode_id', always=True, allow_reuse=True)
     def ensure_ratecode_id_consistency(cls, value: str) -> str:
-        if value not in ["1", "2", "3", "4", "5", "6"]:
-            raise ValidationError("Rate code ID must be between 1 and 6.")  # type: ignore
+        if value not in ['1', '2', '3', '4', '5', '6']:
+            raise ValidationError('Rate code ID must be between 1 and 6.')  # type: ignore
         return value
 
-    @validator("store_and_fwd_flag", always=True, allow_reuse=True)
+    @validator('store_and_fwd_flag', always=True, allow_reuse=True)
     def ensure_store_and_fwd_flag_consistency(cls, value: str) -> str:
-        if value.upper() not in ["Y", "N"]:
+        if value.upper() not in ['Y', 'N']:
             raise ValidationError("Store and FWD flag must be 'Y' or 'N'.")  # type: ignore
         return value
 
-    @validator("payment_type", always=True, allow_reuse=True)
+    @validator('payment_type', always=True, allow_reuse=True)
     def ensure_payment_type_consistency(cls, value: str) -> str:
-        if value not in ["1", "2", "3", "4", "5", "6"]:
-            raise ValidationError("Payment type must be between 1 and 6.")  # type: ignore
+        if value not in ['1', '2', '3', '4', '5', '6']:
+            raise ValidationError('Payment type must be between 1 and 6.')  # type: ignore
         return value
 
-    @validator("trip_type", always=True, allow_reuse=True)
+    @validator('trip_type', always=True, allow_reuse=True)
     def ensure_trip_type_consistency(cls, value: str) -> str:
-        if value not in ["1", "2"]:
-            raise ValidationError("Trip type must be 1 or 2.")  # type: ignore
+        if value not in ['1', '2']:
+            raise ValidationError('Trip type must be 1 or 2.')  # type: ignore
         return value
 
 
@@ -68,14 +68,14 @@ def construct_response(function):
     def wrap(request: Request, *args, **kwargs) -> Dict[str, str]:
         results = function(request, *args, **kwargs)
         response = {
-            "message": results["message"],
-            "method": request.method,
-            "status-code": results["status-code"],
-            "timestamp": datetime.now().isoformat(),
-            "url": request.url._url,
+            'message': results['message'],
+            'method': request.method,
+            'status-code': results['status-code'],
+            'timestamp': datetime.now().isoformat(),
+            'url': request.url._url,
         }
-        if "data" in results:
-            response["data"] = results["data"]
+        if 'data' in results:
+            response['data'] = results['data']
         return response
 
     return wrap

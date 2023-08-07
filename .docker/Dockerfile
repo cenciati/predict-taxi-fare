@@ -1,24 +1,26 @@
 ARG APP_NAME=nyc-taxis
 ARG APP_PATH=/opt/${APP_NAME}
-ARG PYTHON_VERSION=3.10.9
-ARG POETRY_VERSION=1.2.2
+ARG PYTHON_VERSION=3.11
+ARG POETRY_VERSION=1.5.0
 
 # Stage: staging
-FROM python:${PYTHON_VERSION}-slim-bullseye as staging
+FROM python:${PYTHON_VERSION}-slim-bullseye AS staging
 ARG APP_NAME
 ARG APP_PATH
 ARG PYTHON_VERSION
 ARG POETRY_VERSION
 
 # Update libraries and install some helper tools
-RUN apt-get update && \
-    apt-get -y upgrade && \
-    apt-get install -y wget curl
+RUN apt-get update -y && \
+    apt-get upgrade -y && \
+    apt-get install -y --no-install-recommends \
+    bash ca-certificates curl git gnupg openjdk-11-jdk sudo wget && \
+    rm -rf /var/lib/apt/lists/*
 
 # PYTHONDONTWRITEBYTECODE=1: Prevents python from writing .pyc (compiled byte) codes to disk
 # PYTHONUNBUFFERED=1: Forces python outputs to be sent straight to terminal -- without buffering
 ENV \
-    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONDONTWRITEBYTECODE=0 \
     PYTHONUNBUFFERED=1 \
     PYTHONFAULTHANDLER=1
 ENV \
@@ -41,7 +43,7 @@ RUN curl -sSL https://install.python-poetry.org | POETRY_HOME=/opt/poetry python
     && ln -s /opt/poetry/bin/poetry
 
 # Stage: development
-FROM staging as development
+FROM staging AS development
 WORKDIR /home/jovyan
 
 EXPOSE 8888
@@ -53,12 +55,12 @@ ENTRYPOINT ["poetry", "run"]
 CMD ["python", "-m", "jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--no-browser"]
 
 # Stage: build
-FROM development as build
+FROM development AS build
 ARG APP_NAME
 ARG APP_PATH
 WORKDIR ${APP_PATH}
 
-# Convert poetry dependencies to a requirements.txt file
+# Convert poetry pyproject.toml to a requirements.txt file
 COPY --from=development /home/jovyan/pyproject.toml .
 RUN poetry export \ 
     --without dev \
@@ -67,7 +69,7 @@ RUN poetry export \
     --output requirements.txt
 
 # Stage: production
-FROM python:${PYTHON_VERSION}-slim-bullseye as production
+FROM python:${PYTHON_VERSION}-slim-bullseye AS production
 ARG APP_NAME
 ARG APP_PATH
 WORKDIR ${APP_PATH}
@@ -93,7 +95,7 @@ RUN pip install --upgrade pip && \
 COPY ./.docker/entrypoint.sh ./
 RUN chmod +x ./entrypoint.sh
 
-# Wait until the database is ready to run the ASGI web server
+# Wait for the database before running the web server
 COPY --from=staging /usr/local/bin/dockerize /usr/local/bin
 ENTRYPOINT ["dockerize", "-wait", "tcp://db:5432", "-timeout", "30s"]
 CMD ["python", "-m", "src.api.server"]

@@ -2,17 +2,17 @@ default_stages: [commit]
 repos:
   - repo: local
     hooks:
-      - id: lint
-        name: lint code
+      - id: format-lint
+        name: Run formatters and linters
         language: system
-        entry: make
+        entry: poetry run task
         args: ["lint"]
         always_run: true
         pass_filenames: false
       - id: test
-        name: test code
+        name: Run all tests for continuous integration
         language: system
-        entry: maek
-        args: ["test"]
+        entry: poetry run task
+        args: ["test_ci"]
         always_run: true
         pass_filenames: false

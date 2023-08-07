@@ -7,7 +7,7 @@ import pytest
 
 from src.pipeline.stages import read_data
 
-DATA_PATH: str = os.path.join("./data/raw/test/workflow_test_data.parquet")
+DATA_PATH: str = os.path.join('./data/raw/test/workflow_test_data.parquet')
 
 
 @pytest.fixture()
@@ -21,10 +21,12 @@ def test_if_read_data_is_a_pandas_dataframe(read_data_result) -> None:
 
 def test_if_read_data_has_crucial_columns(read_data_result) -> None:
     crucial_columns: List[str] = [
-        "id",
-        "fare_amount",
-        "trip_distance",
-        "extra",
-        "tip_amount",
+        'id',
+        'fare_amount',
+        'trip_distance',
+        'extra',
+        'tip_amount',
     ]
-    assert all(column in read_data_result.columns for column in crucial_columns)
+    assert all(
+        column in read_data_result.columns for column in crucial_columns
+    )

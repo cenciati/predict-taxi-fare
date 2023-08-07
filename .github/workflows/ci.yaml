@@ -9,8 +9,8 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        python-version: ["3.10.9"]
-        poetry-version: ["1.2.2"]
+        python-version: ["3.11"]
+        poetry-version: ["1.5.0"]
 
     steps:
     - uses: actions/checkout@v3
@@ -47,16 +47,9 @@ jobs:
 
     - name: Run isort
       shell: bash
-      run: python -m poetry run python -m isort --check src/
+      run: python -m poetry run task lint
 
-    - name: Run black
-      shell: bash
-      run: python -m poetry run python -m black --check src/
-
-    - name: Run flake8
-      shell: bash
-      run: python -m poetry run python -m pylint src/
-
-    - name: Run tests
-      shell: bash
-      run: python -m poetry run python -m pytest -k "not need_dot_env"
+    # Commented out until I set up a remote repository for used data
+    # - name: Run tests
+    #   shell: bash
+    #   run: python -m poetry run python -m pytest -k "not need_dot_env"

@@ -1,6 +1,3 @@
-# VSCode
-.vscode/
-
 # Cache
 .pytest_cache/
 .mypy_cache/
